@@ -3,9 +3,12 @@ import ReactDOM from 'react-dom'
 
 const MiniArticles = (props) => {
   return (
+    <div className="small-6 medium-3 columns other-article">
     <a href ="#">
-      {props.article.image} {props.article.para}
+      {props.article.image}
+      <p>{props.article.para}</p>
     </a>
+    </div>
   )
 }
 
@@ -25,11 +28,8 @@ class BottomArticle extends React.Component {
      return (
         <div className="small-12 columns other-articles">
         <h2>From around the Realm</h2>
-        <div className="small-6 medium-3 columns other-article">
             {this.state.miniArticles.map(currentArticle => <MiniArticles article = {currentArticle} />)} 
         </div>
-
-      </div>
    )
 }
 }
