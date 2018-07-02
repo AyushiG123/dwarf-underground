@@ -3,6 +3,7 @@ import React from 'react'
 import Comments from './Comments'
 import SharePost from './SharePost'
 import SubHeading from './SubHeading'
+import CommentBox from './CommentBox'
 
 const MainArticle = () => {
    return (
@@ -25,6 +26,7 @@ const MainArticle = () => {
             </section>
             <div className="article-links">
             <Comments />
+            <CommentBox />
             <SharePost />
             </div>
           </div>
